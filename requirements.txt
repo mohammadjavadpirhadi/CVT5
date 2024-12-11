@@ -1,0 +1,12 @@
+SoccerNet==0.1.56
+decord==0.6.0
+torch==2.3.1
+torchvision==0.18.1
+torcheval==0.0.7
+opencv-python==4.9.0.80
+pillow==10.3.0
+transformers==4.40.2
+tensorboard==2.14.0
+evaluate==0.4.2
+nltk==3.8.1
+openai-whisper==20231117

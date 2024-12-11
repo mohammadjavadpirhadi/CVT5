@@ -1,0 +1,126 @@
+{
+    "train_dataset": {
+        "splits": [
+            "train"
+        ],
+        "config": {
+            "stage": 1,
+            "task": "caption",
+            "base_dir": "/home/pirhadi",
+            "mv_shape": 56,
+            "res_shape": 56,
+            "short_memory_len": 40,
+            "gop_size": -1,
+            "feature_extrator": "clip",
+            "use_residuals": false,
+            "use_transcripts_features": true,
+            "transcripts_features_shape": 768,
+            "fps": 2,
+            "pad_videos": true,
+            "add_bg_label": false,
+            "batch_size": 16,
+            "overlap_strategy": "no",
+            "max_samples_per_epoch": 18000,
+            "shuffle": true,
+            "load_labels": true
+        }
+    },
+    "valid_dataset": {
+        "splits": [
+            "valid"
+        ],
+        "config": {
+            "stage": 1,
+            "task": "caption",
+            "base_dir": "/home/pirhadi",
+            "mv_shape": 56,
+            "res_shape": 56,
+            "short_memory_len": 40,
+            "gop_size": -1,
+            "feature_extrator": "clip",
+            "use_residuals": false,
+            "use_transcripts_features": true,
+            "transcripts_features_shape": 768,
+            "fps": 2,
+            "pad_videos": true,
+            "add_bg_label": false,
+            "batch_size": 32,
+            "overlap_strategy": "no",
+            "shuffle": false,
+            "load_labels": true
+        }
+    },
+    "test_dataset": {
+        "splits": [
+            "valid"
+        ],
+        "config": {
+            "stage": 1,
+            "task": "caption",
+            "base_dir": "/home/pirhadi",
+            "mv_shape": 56,
+            "res_shape": 56,
+            "short_memory_len": 40,
+            "gop_size": -1,
+            "feature_extrator": "clip",
+            "use_residuals": false,
+            "use_transcripts_features": true,
+            "transcripts_features_shape": 768,
+            "fps": 2,
+            "pad_videos": true,
+            "add_bg_label": false,
+            "batch_size": 32,
+            "overlap_strategy": "no",
+            "shuffle": false,
+            "load_labels": false
+        }
+    },
+    "cvt5_config": {
+        "short_memory_len": 40,
+        "feature_extrator": "resnet-pooler",
+        "use_residuals": false,
+        "use_transcripts_features": true,
+        "I_feature_shape": 768,
+        "mv_shape": 56,
+        "mv_feature_shape": 512,
+        "res_shape": 56,
+        "res_feature_shape": 512,
+        "two_stage_encoder": true,
+        "period_encoder_nhead": 32,
+        "period_encoder_d_hid": 1536,
+        "period_encoder_nlayers": 2,
+        "video_encoder_nhead": 32,
+        "video_encoder_d_hid": 1536,
+        "video_encoder_nlayers": 2,
+        "umt5_enabled": false,
+        "freeze_umt5": true,
+        "dropout": 0.1,
+        "num_classes": 13,
+        "umt5_loss_weight": 0.0,
+        "spotting_loss_weight": 1.0
+    },
+    "name": "dvc1",
+    "base_dir": "/home/pirhadi",
+    "epoches": 25,
+    "device": "cuda",
+    "spotting_loss_fn": {
+        "name": "FocalLoss",
+        "pos_weights_params": {},
+        "params": {
+            "alpha": 0.9
+        },
+        "wp_params": {
+            "past_loss_weight": 0.0,
+            "future_loss_weight": 0.0,
+            "short_memory_len": 40,
+            "reduction": "mean"
+        }
+    },
+    "lr": 0.0001,
+    "weight_decay": 0.001,
+    "num_warmup_steps": 0,
+    "num_cosine_schedule_cycles": 0.35,
+    "verbose": true,
+    "save_model": true
+}
+
