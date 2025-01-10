@@ -11,8 +11,7 @@ parser.add_argument('--gop_size',
                     help='GOP size',default=-1)
 parser.add_argument('--target_fps',
                     required=False,type=int,
-                    default=2,
-                    help='output fps')
+                    help='output fps',default=2)
 
 args = parser.parse_args()
 
