@@ -31,7 +31,7 @@ parser.add_argument('--top_p',
                     help='generate top p')
 parser.add_argument('--ignore_blanks',
                     required=False,action='store_true',
-                    help='ignore blank predictions')
+                    help='ignore blank predictions',default=True)
 parser.add_argument('--evaluate',
                     required=False,action='store_true',
                     help='whether to do evaluation')
