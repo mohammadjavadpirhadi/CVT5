@@ -7,7 +7,7 @@ Official Implementation of CVT5: Using Compressed Video Encoder and UMT5 for Den
 
 ## Checkpoint
 
-We have released the best checkpoint trained on train+validation+test. You can submit the predictions of this checkpoint to the (eval.ai platform)[https://eval.ai/web/challenges/challenge-page/2199/overview] challenge phase to compare results with SOTA methods. To download and extract the checkpoint, use the following command:
+We have released the best checkpoint trained on train+validation+test. You can submit the predictions of this checkpoint to the [eval.ai platform](https://eval.ai/web/challenges/challenge-page/2199/overview) challenge phase to compare results with SOTA methods. To download and extract the checkpoint, use the following command:
 
 ```bash
 bash download_checkpoint.sh
