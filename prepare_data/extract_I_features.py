@@ -19,11 +19,11 @@ parser.add_argument('--gop_size',
                     required=False,type=int,
                     help='GOP size',default=-1)
 parser.add_argument('--feature_extractor',
-                    required=True,type=str,
-                    help='feature extractor')
+                    required=False,type=str,
+                    help='feature extractor',default='clip')
 parser.add_argument('--batch_size',
-                    required=True,type=int,
-                    help='batch size')
+                    required=False,type=int,
+                    help='batch size',default=32)
 
 args = parser.parse_args()
 assert args.feature_extractor in ['resnet', 'clip'], "Feature extractor should be one of 'resnet' or 'clip'"
