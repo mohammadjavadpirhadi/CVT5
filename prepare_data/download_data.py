@@ -17,7 +17,7 @@ os.makedirs(BASE_DIR, exist_ok=True)
 os.makedirs(LOGS_DIR, exist_ok=True)
 
 mySNdl = SNdl(LocalDirectory=f"{BASE_DIR}/data")
-mySNdl.password = getpass()
+mySNdl.password = getpass("SoccerNet password:")
 # mySNdl.downloadDataTask(
 #     task="spotting-ball-2024",
 #     split=["train", "valid", "test", "challenge"],
