@@ -11,8 +11,8 @@ parser.add_argument('--base_dir',
                     required=True,type=str,
                     help='path to base directory containing data folder')
 parser.add_argument('--asr_batch_size',
-                    required=True,type=int,
-                    help='batch size')
+                    required=False,type=int,
+                    help='batch size',default=32)
 
 args = parser.parse_args()
 
