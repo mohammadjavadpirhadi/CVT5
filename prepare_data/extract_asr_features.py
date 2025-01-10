@@ -10,8 +10,8 @@ parser.add_argument('--base_dir',
                     required=True,type=str,
                     help='path to base directory containing data folder')
 parser.add_argument('--chunk_size_s',
-                    required=True,type=int,
-                    help='output chunk size')
+                    required=False,type=int,
+                    help='output chunk size',default=30)
 
 args = parser.parse_args()
 
