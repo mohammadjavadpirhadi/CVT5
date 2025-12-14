@@ -1,6 +1,8 @@
 # CVT5
 Official Implementation of CVT5: Using Compressed Video Encoder and UMT5 for Dense Video Captioning (EvalMG25 @ COLING 2025)
 
+[![Paper](https://img.shields.io/badge/Paper-COLING2025-blue)](https://aclanthology.org/2025.evalmg-1.2/)
+
 ## Architecture Overview
 
 ![architecture](assets/CVT5.png)
